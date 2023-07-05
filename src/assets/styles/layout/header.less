@@ -1,0 +1,39 @@
+.main__page__header {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid @border-color-base;
+
+	.container,
+	.container-fluid {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header__menu {
+		&__item {
+			text-transform: uppercase;
+			font-size: 16px;
+			padding: 8px 20px !important;
+			margin: 0 10px;
+			border-radius: 10px;
+			&::after{border-bottom: 0 !important;}
+			&:nth-last-child(2){
+				background: @primary-color;
+				transition: @ease-in-out;
+			
+				a{
+					color: @white;
+				}
+				&:hover{
+					background: @gradiant-background;
+					&::after{border-bottom: 0;}
+				}
+			}
+		}
+		
+		
+	}
+}
